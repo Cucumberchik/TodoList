@@ -2,11 +2,12 @@
 
 import { create } from 'zustand'
 import axios from "axios"
-import { api } from '../components/api'
+import { api } from '../api'
 
 type TypeList = {
     name: string,
-    lastname:string
+    lastname:string,
+    _id:number
 }
 interface AppStore {
     list:TypeList[],

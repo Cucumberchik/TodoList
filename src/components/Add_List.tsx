@@ -1,4 +1,4 @@
-import { FC, ReactElement, useEffect, useState } from "react"
+import { FC, ReactElement, useState } from "react"
 import { useStore } from "../zustand/store";
 
 interface AppPropsDialog {
@@ -6,11 +6,12 @@ interface AppPropsDialog {
     status: string
 }
 type TypeList = {
-    name: string,
-    lastname:string
+    name:string,
+    lastname:string,
+    _id:number
 }
 const AddListDialog:FC<AppPropsDialog> = ({status, onClause}):ReactElement => {
-    const [list, setList] = useState<TypeList>({name:'', lastname:''});
+    const [list, setList] = useState<TypeList>({name:'', lastname:'', _id: new Date().getTime()});
     const [error, setError] = useState<boolean>(false)
     const {postLoading, postList} = useStore(set => set);
 
@@ -29,7 +30,7 @@ const AddListDialog:FC<AppPropsDialog> = ({status, onClause}):ReactElement => {
         
         setTimeout(()=>{
             handleClose()
-            setList({name:'', lastname:''})
+            setList({name:'', lastname:'', _id: new Date().getTime()})
         },1400)
     }
     const disibleState = postLoading ? " loading" : "";
