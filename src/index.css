@@ -1,0 +1,156 @@
+:root {
+	--white: #fff;
+	--accents-red: #ff3b30;
+	--accents-red---dark: #ff453a;
+	--accents-orange: #ff9500;
+	--accents-orange---dark: #ff9f0a;
+	--accents-yellow: #fc0;
+	--accents-yellow---dark: #ffd60a;
+	--accents-green: #28cd41;
+	--accents-green---dark: #32d74b;
+	--accents-mint: #00c7be;
+	--accents-mint---dark: #66d4cf;
+	--accents-teal: #59adc4;
+	--accents-teal---dark: #6ac4dc;
+	--accents-cyan: #55bef0;
+	--accents-cyan---dark: #5ac8f5;
+	--accents-blue: #007aff;
+	--alt-blue: #1384fe;
+	--accents-blue---dark: #0a84ff;
+	--accents-indigo: #5856d6;
+	--accents-indigo--dark: #5e5ce6;
+	--accents-purple: #af52de;
+	--accents-purple---dark: #bf5af2;
+	--accents-pink: #ff2d55;
+	--accents-pink---dark: #ff375f;
+	--accents-gray: #8e8e93;
+	--accents-gray---dark: #98989d;
+	--accents-brown: #a2845e;
+	--accents-brown---dark: #ac8e68;
+	--accents---vibrant-red: rgba(245, 49, 38, 0.4);
+	--accents---vibrant-red---dark: #ff4f44;
+	--accents---vibrant-orange: rgba(245, 139, 0, 0.4);
+	--accents---vibrant-orange---dark: #ffa914;
+	--accents---vibrant-yellow: rgba(245, 194, 0, 0.4);
+	--accents---vibrant-yellow---dark: #ffe014;
+	--accents---vibrant-green: #1ec337;
+	--accents---vibrant-green---dark: #3ce155;
+	--accents---vibrant-mint: #00bdb4;
+	--accents---vibrant-mint---dark: #6ce0db;
+	--accents---vibrant-teal: #2ea7bd;
+	--accents---vibrant-teal---dark: #44d4fa;
+	--accents---vibrant-cyan: #41afdc;
+	--accents---vibrant-cyan---dark: #5acdfa;
+	--accents---vibrant-blue: #0070f5;
+	--accents---vibrant-blue---dark: #148eff;
+	--accents---vibrant-indigo: #5452cc;
+	--accents---vibrant-indigo---dark: #6361f2;
+	--accents---vibrant-purple: #9f4bc9;
+	--accents---vibrant-purple---dark: #cc65ff;
+	--accents---vibrant-pink: #f5234b;
+	--accents---vibrant-pink---dark: #ff4169;
+	--accents---vibrant-brown: #987a54;
+	--accents---vibrant-brown---dark: #b69872;
+	--accents---vibrant-gray: #848489;
+	--accents---vibrant-gray---dark: #a2a2a7;
+	--fills-primary: rgba(0, 0, 0, 0.1);
+	--fills-secondary: rgba(0, 0, 0, 0.08);
+	--fills-tertiary: rgba(0, 0, 0, 0.05);
+	--fills-quaternary: rgba(0, 0, 0, 0.03);
+	--fills-quinary: rgba(0, 0, 0, 0.01);
+	--fills-primary---dark: rgba(255, 255, 255, 0.1);
+	--fills-secondary---dark: rgba(255, 255, 255, 0.08);
+	--fills-tertiary---dark: rgba(255, 255, 255, 0.05);
+	--fills-quaternary---dark: rgba(255, 255, 255, 0.03);
+	--fills-quinary---dark: rgba(255, 255, 255, 0.01);
+	--fills---vibrant-primary: #d9d9d9;
+	--fills---vibrant-secondary: #e6e6e6;
+	--fills---vibrant-tertiary: #f2f2f2;
+	--fills---vibrant-quaternary: #f7f7f7;
+	--fills---vibrant-quinary: #fbfbfb;
+	--fills---vibrant-primary---dark: #242424;
+	--fills---vibrant-secondary---dark: #141414;
+	--fills---vibrant-tertiary---dark: #0d0d0d;
+	--fills---vibrant-quaternary---dark: #090909;
+	--fills---vibrant-quinary---dark: #070707;
+	--text-primary: rgba(0, 0, 0, 0.85);
+	--text-secondary: rgba(0, 0, 0, 0.5);
+	--text-tertiary: rgba(0, 0, 0, 0.25);
+	--text-quaternary: rgba(0, 0, 0, 0.1);
+	--text-quinary: rgba(0, 0, 0, 0.05);
+	--text-primary---dark: rgba(255, 255, 255, 0.85);
+	--text-secondary---dark: rgba(255, 255, 255, 0.55);
+	--text-tertiary---dark: rgba(255, 255, 255, 0.25);
+	--text-quaternary---dark: rgba(255, 255, 255, 0.1);
+	--text-quinary---dark: rgba(255, 255, 255, 0.05);
+	--text---vibrant-primary: #4c4c4c;
+	--text---vibrant-secondary: #808080;
+	--text---vibrant-tertiary: #bfbfbf;
+	--text---vibrant-quaternary: #bfbfbf;
+	--text---vibrant-quinary: #bfbfbf;
+	--text---vibrant-primary---dark: #e5e5e5;
+	--text---vibrant-secondary---dark: #7c7c7c;
+	--text---vibrant-tertiary---dark: #414141;
+	--text---vibrant-quaternary---dark: #414141;
+	--text---vibrant-quinary---dark: #414141;
+	--materials-ultrathick: rgba(246, 246, 246, 0.84);
+	--materials-thick: rgba(246, 246, 246, 0.72);
+	--materials-medium: rgba(246, 246, 246, 0.6);
+	--materials-thin: rgba(246, 246, 246, 0.48);
+	--materials-ultrathin: rgba(246, 246, 246, 0.36);
+	--materials-ultrathick---dark: rgba(0, 0, 0, 0.5);
+	--materials-thick---dark: rgba(0, 0, 0, 0.4);
+	--materials-medium---dark: rgba(0, 0, 0, 0.29);
+	--materials-thin---dark: rgba(0, 0, 0, 0.2);
+	--materials-ultrathin---dark: rgba(0, 0, 0, 0.1);
+	--materials---controls-menu: rgba(40, 40, 40, 0.58);
+	--materials---controls-popover: rgba(0, 0, 0, 0.28);
+	--material-background-thick: rgba(253, 253, 253, 0.85);
+	--materials---controls-title-bar: rgba(234, 234, 234, 0.8);
+	--materials---controls-sidebar: rgba(234, 234, 234, 0.84);
+	--materials---controls-selection-focused: #0a82ff;
+	--materials---controls-selection-unfocused: rgba(246, 246, 246, 0.84);
+	--materials---controls-header-view: rgba(255, 255, 255, 0.8);
+	--materials---controls-tooltip: rgba(246, 246, 246, 0.6);
+	--materials---controls-under-window-background: rgba(246, 246, 246, 0.84);
+	--materials---controls-menu---dark: rgba(246, 246, 246, 0.72);
+	--materials---controls-popover---dark: rgba(246, 246, 246, 0.6);
+	--materials---controls-title-bar---dark: rgba(60, 60, 60, 0.8);
+	--materials---controls-sidebar---dark: rgba(0, 0, 0, 0.45);
+	--materials---controls-selection-focused---dark: #0a82ff;
+	--materials---controls-selection-unfocused---dark: rgba(40, 40, 40, 0.65);
+	--materials---controls-header-view---dark: rgba(30, 30, 30, 0.8);
+	--materials---controls-tooltip---dark: rgba(0, 0, 0, 0.35);
+	--materials---controls-under-window-background---dark: rgba(0, 0, 0, 0.45);
+	--materials---controls-fullscreen---dark: rgba(40, 40, 40, 0.5);
+	--materials---controls-hud---dark: rgba(40, 40, 40, 0.5);
+	---template-sheet-fill: #ccc;
+
+  --font-family:  Arial, Helvetica, sans-serif;
+  --second-family: monospace;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color-scheme: dark;
+  font-family: var(--font-family);
+}
+html, body, main {
+  background: #333333;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 47%;
+  display: flex;
+}
+#dialog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}

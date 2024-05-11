@@ -1,0 +1,1 @@
+export const api:string = "https://api-v2.elchocrud.pro/api/v1/7a06e9a07a87a9677a5a0a5fcc0d4dd6";
