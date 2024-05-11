@@ -34,7 +34,7 @@ export const useStore = create<AppStore>((set)=>({
         }
     },
     postList: async(link, obj) => {
-        
+
         set({postLoading: true});
 
         try{
