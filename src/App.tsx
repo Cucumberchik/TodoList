@@ -19,7 +19,7 @@ export const App:FC = ():ReactNode => {
   const [isDelete, setIsDelete] = useState<TypeState>({status: 'disabled', _id: NaN})
   const [isChange, setIsChange] = useState<TypeState>({status: 'disabled', _id: NaN})
 
-  const {list, getData, getLoading, postLoading} = useStore(set => set);
+  const {list, getData, getLoading} = useStore(set => set);
   
   const handleGetData = () => {getData('/users')}
 
@@ -31,7 +31,7 @@ export const App:FC = ():ReactNode => {
     <main>
       <ChangeDialog _id={isChange._id} onClose={()=>setIsChange({...isChange, status: "cloused"})} status={isChange.status}/>
       <AddListDialog status={isDialog} onClose={()=>setIsDialog("cloused")} />
-      <DeleteDialog status={isDelete.status} unRender={handleGetData} onClose={()=>setIsDelete({...isDelete, status : "cloused"})} _id={isDelete._id} />
+      <DeleteDialog status={isDelete.status} onClose={()=>setIsDelete({...isDelete, status : "cloused"})} _id={isDelete._id} />
       <div className="container">
         <button className='add_btn' onClick={()=>setIsDialog("opened")} >+ Add</button>
         {getLoading ? <Spiner /> :

@@ -4,11 +4,10 @@ import { useStore } from "../zustand/store"
 interface AppPropsDialog {
     onClose: () => void,
     status: string,
-    _id: number,
-    unRender: () => void
+    _id: number
 }
 
-export const DeleteDialog:FC<AppPropsDialog> = ({onClose, status, _id, unRender}):ReactElement => {
+export const DeleteDialog:FC<AppPropsDialog> = ({onClose, status, _id}):ReactElement => {
     const {deleteItem} = useStore(set=> set);
     const hadnleDelete = () => {
         deleteItem(_id);
