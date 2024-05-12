@@ -25,8 +25,8 @@ const AddListDialog:FC<AppPropsDialog> = ({status, onClose}):ReactElement => {
         
         setTimeout(()=>{
             handleClose()
-            setList({name:'', lastname:'', _id: new Date().getTime()})
-        },1400)
+            setList({name:'', lastname:''})
+        },180)
     }
     const disibleState = postLoading ? " loading" : "";
     
