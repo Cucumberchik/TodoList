@@ -1,1 +1,1 @@
-export const api:string = "https://api-v2.elchocrud.pro/api/v1/fc6df2e1a31b9520269495a2ee6d049c";
+export const api:string = import.meta.env.VITE_URL
