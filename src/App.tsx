@@ -3,7 +3,7 @@ import AddListDialog from './components/Add_List'
 import "./App.scss"
 import { useStore } from './zustand/store';
 import { Spiner } from './icons/Spiner';
-// import { DeleteDialog } from './components/Delete_Dialog';
+import { DeleteDialog } from './components/Delete_Dialog';
 
 interface AppList {
   name: string,
@@ -23,15 +23,12 @@ export const App:FC = ():ReactNode => {
 
   useEffect(()=>{
     handleGetData()
-  },[]);
-  useEffect(()=>{
-    handleGetData()
-  },[postLoading]);
+  },[])
 
   return (
     <main>
-      <AddListDialog status={isDialog} onClause={()=>setIsDialog("cloused")} />
-      {/* <DeleteDialog status={isDelete.status} onClouse={()=>setIsDelete({...isDelete, status : "cloused"})} _id={isDelete._id} /> */}
+      <AddListDialog status={isDialog} onClose={()=>setIsDialog("cloused")} />
+      <DeleteDialog status={isDelete.status} unRender={handleGetData} onClose={()=>setIsDelete({...isDelete, status : "cloused"})} _id={isDelete._id} />
       <div className="container">
         <button className='add_btn' onClick={()=>setIsDialog("opened")} >+ Add</button>
         {getLoading ? <Spiner /> :
